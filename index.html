@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10243f">
+  <meta name="description" content="Snowang Design — clean, meaningful graphic design, branding, posters, print and digital visuals.">
+  <title>Snowang Design — Creative Portfolio</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#10243f;--blue:#1677ee;--sky:#79b8ff;--muted:#5d6c82;--line:#e5ebf3;--paper:#fff;--soft:#f5f8fc;--green:#16a05b}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;color:var(--navy);background:var(--paper);font-family:"DM Sans",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.container{width:min(1180px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(16,36,63,.08)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:10px;font:800 23px Manrope,sans-serif;letter-spacing:-.7px;white-space:nowrap}.brand span{font-weight:500}.mountain{width:39px;height:31px;flex:none}.navlinks{display:flex;align-items:center;gap:28px;font-size:14px;font-weight:600}.navlinks a:hover,.navlinks a.active{color:var(--blue)}.wa{background:var(--green);color:white;padding:11px 18px;border-radius:30px;font-size:14px;font-weight:700;white-space:nowrap;box-shadow:0 8px 20px #16a05b24}.menu{display:none;border:0;background:transparent;color:var(--navy);font-size:26px;cursor:pointer}
+    .hero{min-height:420px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(7,24,44,.92) 0%,rgba(7,24,44,.68) 43%,rgba(7,24,44,.05) 100%),url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2200&q=85") center 48%/cover no-repeat}.hero-inner{padding:72px 0 78px}.eyebrow{font-size:12px;letter-spacing:1.7px;text-transform:uppercase;font-weight:700}.eyebrow .dot{padding:0 10px;color:#8fc5ff}.hero h1{font:800 clamp(42px,6vw,68px)/1.06 Manrope,sans-serif;letter-spacing:-2.8px;margin:16px 0 18px;max-width:690px}.hero h1 span{color:var(--sky)}.hero p{max-width:520px;margin:0;color:#edf4ff;font-size:17px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid transparent;border-radius:30px;padding:12px 21px;font-weight:700;font-size:14px;transition:.2s;cursor:pointer}.btn-primary{background:var(--blue);color:#fff}.btn-primary:hover{background:#0865d5;transform:translateY(-1px)}.btn-outline{border-color:#ffffffb8;color:white}.btn-outline:hover{background:#ffffff18}
+    section{padding:66px 0}.section-top{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:25px}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:1.5px;color:#1557a4;font-weight:800}.section-title{font:800 clamp(28px,4vw,36px)/1.2 Manrope,sans-serif;letter-spacing:-1px;margin:5px 0 0}.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:white;color:#344761;padding:8px 15px;border-radius:24px;font-size:12px;font-weight:700;cursor:pointer}.filter:hover,.filter.active{background:var(--blue);border-color:var(--blue);color:white}
+    .projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px 20px}.project{min-width:0;transition:transform .2s}.project:hover{transform:translateY(-4px)}.project-image{width:100%;aspect-ratio:1.28;display:block;object-fit:cover;border-radius:9px;background:#e9eff7}.project h3{font:700 16px Manrope,sans-serif;margin:10px 0 1px}.project p{font-size:13px;color:var(--muted);margin:0}.project[hidden]{display:none}
+    .about{background:var(--soft)}.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:58px;align-items:center}.about-copy p{color:#53657d;max-width:560px}.signature{font-family:cursive;font-size:32px;font-style:italic;color:#183c68;margin-top:12px;transform:rotate(-5deg);display:inline-block}.services{display:grid;gap:17px}.service{display:flex;align-items:center;gap:15px}.service-icon{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#e2efff;color:var(--blue);font-size:22px;flex:none}.service h3{font-size:15px;margin:0 0 2px}.service p{font-size:13px;color:var(--muted);margin:0}.about-photo{width:100%;height:280px;object-fit:cover;border-radius:10px;grid-column:2;grid-row:1;margin-top:265px}
+    .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px}.contact-copy p{color:var(--muted)}.contact-items{display:grid;gap:12px;margin-top:22px}.contact-item{display:flex;gap:12px;align-items:center}.contact-item .service-icon{width:42px;height:42px}.contact-form{display:grid;gap:13px}.contact-form label{font-size:13px;font-weight:700}.contact-form input,.contact-form textarea{width:100%;margin-top:5px;padding:12px 13px;border:1px solid #dbe3ee;border-radius:8px;background:#fbfcfe;outline:none}.contact-form input:focus,.contact-form textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #1677ee18}.contact-form textarea{min-height:125px;resize:vertical}.contact-form small{color:var(--muted)}
+    footer{background:#10243b;color:#f4f7fb;padding:25px 0}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-brand{font:700 18px Manrope,sans-serif}.footer-brand span{font-weight:400}.footer-links{display:flex;gap:18px;font-size:13px}.footer-links a:hover{color:#8fc5ff}.copyright{font-size:11px;color:#b7c5d7}
+    .whatsapp-float{position:fixed;right:20px;bottom:20px;z-index:15;background:var(--green);color:white;padding:13px 17px;border-radius:40px;box-shadow:0 10px 28px #0b573a40;font-weight:700;font-size:13px}
+    @media(max-width:850px){.navlinks{gap:16px}.projects{grid-template-columns:repeat(2,minmax(0,1fr))}.about-grid{gap:30px}.about-photo{margin-top:245px}.contact-grid{gap:28px}}
+    @media(max-width:650px){.container{width:min(100% - 30px,520px)}.nav{height:66px}.brand{font-size:20px}.mountain{width:32px}.menu{display:block}.navlinks{display:none;position:absolute;top:65px;left:0;right:0;background:white;padding:15px 22px 22px;border-bottom:1px solid var(--line);box-shadow:0 15px 20px #10243f0b;align-items:stretch;gap:0}.navlinks.open{display:flex;flex-direction:column}.navlinks a{padding:11px 0}.nav .wa{display:none}.hero{min-height:420px;background-position:57% center}.hero-inner{padding:60px 0}.hero h1{letter-spacing:-1.8px}.hero p{font-size:15px}.eyebrow{font-size:10px;letter-spacing:1px}.section-top{align-items:start;flex-direction:column}.filters{gap:6px}.filter{padding:7px 12px}.projects{grid-template-columns:1fr 1fr;gap:20px 12px}.project-image{aspect-ratio:1}.project h3{font-size:14px}.project p{font-size:12px}section{padding:48px 0}.about-grid,.contact-grid{grid-template-columns:1fr}.about-photo{grid-column:auto;grid-row:auto;margin-top:0;height:230px}.services{margin-top:6px}.footer-row{align-items:flex-start;flex-direction:column}.whatsapp-float{right:12px;bottom:12px;padding:11px 14px}.signature{font-size:28px}}
+    @media(max-width:390px){.projects{grid-template-columns:1fr}.project-image{aspect-ratio:1.3}.hero h1{font-size:40px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Snowang Design home">
+      <svg class="mountain" viewBox="0 0 50 38" fill="none" aria-hidden="true"><path d="M2 32 18 13 25 22 34 5 48 32" stroke="#1557a4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="m14 32 11-12 8 9" stroke="#2d8df4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Snowang <span>Design</span>
+    </a>
+    <button class="menu" id="menuButton" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#portfolio">Portfolio</a><a href="#services">Services</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="wa" data-whatsapp href="#" target="_blank" rel="noopener">◉ &nbsp; WhatsApp</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="eyebrow">Creative design <span class="dot">•</span> Clean visuals <span class="dot">•</span> Real impact</div>
+      <h1>Snowang <span>Design</span></h1>
+      <p>Turning ideas into clean, meaningful designs. From branding to digital media, I create visuals that communicate and make an impact.</p>
+      <div class="actions"><a class="btn btn-primary" href="#portfolio">View My Work <span aria-hidden="true">→</span></a><a class="btn btn-outline" href="#contact">Contact Me <span aria-hidden="true">✉</span></a></div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-top">
+        <div><div class="kicker">My portfolio</div><h2 class="section-title">Featured Work</h2></div>
+        <div class="filters" role="group" aria-label="Filter portfolio">
+          <button class="filter active" data-filter="all">All</button><button class="filter" data-filter="logo">Logos</button><button class="filter" data-filter="poster">Posters</button><button class="filter" data-filter="social">Social Media</button><button class="filter" data-filter="print">Print Design</button>
+        </div>
+      </div>
+      <div class="projects" id="projectGrid">
+        <article class="project" data-category="logo"><img class="project-image" loading="lazy" src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=900&q=80" alt="Graphic design workspace with colorful design samples"><h3>Logo Design</h3><p>HIS — IT Services &amp; Hosting</p></article>
+        <article class="project" data-category="poster"><img class="project-image" loading="lazy" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Mountain landscape for a travel poster concept"><h3>Poster Design</h3><p>Travel Poster</p></article>
+        <article class="project" data-category="logo"><img class="project-image" loading="lazy" src="https://images.unsplash.com/photo-1634942536790-2534db9a2a3b?auto=format&fit=crop&w=900&q=80" alt="Minimal business identity and stationery mockup"><h3>Brand Identity</h3><p>Business Card &amp; Branding</p></article>
+        <article class="project" data-category="print"><img class="project-image" loading="lazy" src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=80" alt="Printed brochure and stationery design inspiration"><h3>Brochure Design</h3><p>Travel Brochure</p></article>
+        <article class="project" data-category="social"><img class="project-image" loading="lazy" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="Snow-covered mountain landscape"><h3>Social Media Visual</h3><p>Campaign Artwork</p></article>
+        <article class="project" data-category="print"><img class="project-image" loading="lazy" src="https://images.unsplash.com/photo-1455390582262-044c570c6c9b?auto=format&fit=crop&w=900&q=80" alt="Creative desk and design planning materials"><h3>Print Design</h3><p>Editorial &amp; Promotional Materials</p></article>
+      </div>
+      <p style="font-size:12px;color:#738198;margin-top:20px">Portfolio demo: replace these sample photos and project descriptions with your own work before publishing.</p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-copy">
+        <div class="kicker">About me</div><h2 class="section-title">Hi, I’m Snowang</h2>
+        <p>I’m a passionate designer focused on creating clean, modern and meaningful visuals. I work with businesses, creatives and individuals to bring their ideas to life through visual communication.</p>
+        <div class="signature">Snowang</div>
+      </div>
+      <div class="services" id="services">
+        <div class="service"><div class="service-icon" aria-hidden="true">✎</div><div><h3>Logo &amp; Branding</h3><p>Unique identity and visuals for your brand.</p></div></div>
+        <div class="service"><div class="service-icon" aria-hidden="true">▧</div><div><h3>Graphic Design</h3><p>Posters, social media, print design and more.</p></div></div>
+        <div class="service"><div class="service-icon" aria-hidden="true">▣</div><div><h3>Photo Editing</h3><p>Clean, sharp and professional edits.</p></div></div>
+        <div class="service"><div class="service-icon" aria-hidden="true">▱</div><div><h3>Digital Design</h3><p>Web graphics, banners and digital content.</p></div></div>
+      </div>
+      <img class="about-photo" loading="lazy" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80" alt="Mountain landscape representing creative inspiration">
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container contact-grid">
+      <div class="contact-copy">
+        <div class="kicker">Let’s work together</div><h2 class="section-title">Have a project in mind?</h2>
+        <p>Tell me a little about your idea. I’d love to help turn it into something clear, thoughtful and memorable.</p>
+        <div class="contact-items">
+          <div class="contact-item"><div class="service-icon" aria-hidden="true">✉</div><div><strong>Email</strong><br><a data-email-link href="mailto:hello@example.com"><span data-email-text>hello@example.com</span></a></div></div>
+          <div class="contact-item"><div class="service-icon" aria-hidden="true">◉</div><div><strong>WhatsApp</strong><br><a data-whatsapp href="#" target="_blank" rel="noopener">Message me on WhatsApp</a></div></div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label>Your name<input name="name" autocomplete="name" required placeholder="Enter your name"></label>
+        <label>Your email<input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+        <label>Tell me about your project<textarea name="message" required placeholder="What do you need designed?"></textarea></label>
+        <button class="btn btn-primary" type="submit">Send project enquiry →</button>
+        <small>This form opens your email app with a ready-to-send message; it does not send or store anything by itself.</small>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <a class="footer-brand" href="#home">⌁ Snowang <span>Design</span></a>
+    <div class="footer-links"><a href="#about">About</a><a href="#portfolio">Portfolio</a><a href="#services">Services</a><a href="#contact">Contact</a></div>
+    <div class="copyright">© <span id="year"></span> Snowang Design. All rights reserved.</div>
+  </div>
+</footer>
+<a class="whatsapp-float" data-whatsapp href="#" target="_blank" rel="noopener" aria-label="Contact Snowang Design on WhatsApp">◉ &nbsp; Chat on WhatsApp</a>
+<script>
+  // IMPORTANT: replace these placeholders with your real contact details.
+  const WHATSAPP_NUMBER = "9779800000000"; // Country code + number, digits only; replace this demo number.
+  const CONTACT_EMAIL = "hello@example.com"; // Replace with your real email address.
+
+  document.querySelectorAll("[data-whatsapp]").forEach(link => {
+    link.href = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent("Hello Snowang Design, I would like to discuss a design project.");
+  });
+  document.querySelectorAll("[data-email-link]").forEach(link => link.href = "mailto:" + CONTACT_EMAIL);
+  document.querySelectorAll("[data-email-text]").forEach(el => el.textContent = CONTACT_EMAIL);
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const filterButtons = document.querySelectorAll(".filter");
+  const projects = document.querySelectorAll(".project");
+  filterButtons.forEach(button => button.addEventListener("click", () => {
+    filterButtons.forEach(item => item.classList.toggle("active", item === button));
+    const filter = button.dataset.filter;
+    projects.forEach(project => project.hidden = filter !== "all" && project.dataset.category !== filter);
+  }));
+
+  const menuButton = document.getElementById("menuButton");
+  const navlinks = document.getElementById("navlinks");
+  menuButton.addEventListener("click", () => {
+    const isOpen = navlinks.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    menuButton.textContent = isOpen ? "×" : "☰";
+  });
+  navlinks.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+    navlinks.classList.remove("open");
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.textContent = "☰";
+  }));
+
+  document.getElementById("contactForm").addEventListener("submit", event => {
+    event.preventDefault();
+    const form = new FormData(event.currentTarget);
+    const subject = encodeURIComponent("Design enquiry from " + form.get("name"));
+    const body = encodeURIComponent("Name: " + form.get("name") + "\nEmail: " + form.get("email") + "\n\nProject details:\n" + form.get("message"));
+    window.location.href = "mailto:" + CONTACT_EMAIL + "?subject=" + subject + "&body=" + body;
+  });
+</script>
+</body>
+</html>
